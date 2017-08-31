@@ -4,12 +4,10 @@
 
 ![preview-help](https://user-images.githubusercontent.com/5036939/29917591-6819abba-8e7d-11e7-855e-76a2a7271bc2.png)
 
-## Dependency or Recommand modules
+## Dependency
 
 - Python 2.x
 - [openconnect](http://www.infradead.org/openconnect/): vpn client
-- gpg
-- [pass](https://www.passwordstore.org/): the standard unix password manager
  
 ## Install
 
@@ -32,13 +30,18 @@
 <details>
 <summary>Tip. Using <code>pass</code></summary>
 
+Recommand you that use `pass` module for manage passwords.
+
+- gpg
+- [pass](https://www.passwordstore.org/): the standard unix password manager
+
 ```bash
+$ brew install gpg
+$ brew install pass
 $ gpg --gen-key
 $ pass init "password stroe"
-# Add password for vpn
-$ pass insert vpn/login-password
-# Add password of mail for OTP
-$ pass insert email/gmail
+$ pass insert vpn/login-password # Add password for vpn
+$ pass insert email/gmail # Add password of mail for OTP
 ```
 
 </details>
