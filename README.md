@@ -2,6 +2,8 @@
 
 > automation connect vpn
 
+![preview-help](https://user-images.githubusercontent.com/5036939/29917591-6819abba-8e7d-11e7-855e-76a2a7271bc2.png)
+
 ## Dependency or Recommand modules
 
 - Python 2.x
