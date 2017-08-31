@@ -2,7 +2,7 @@
 
 > Automate VPN connection.
 
-![preview-help](https://user-images.githubusercontent.com/5036939/29917591-6819abba-8e7d-11e7-855e-76a2a7271bc2.png)
+![preview-help](https://user-images.githubusercontent.com/5036939/29922362-3ff7ae80-8e90-11e7-9e3b-1ed4004b39fa.png)
 
 ## Dependency
 
@@ -68,6 +68,42 @@ $ pass insert email/gmail # Add password of mail for OTP
     ```
 
 </details>
+
+### VPN Connection/Disconnection
+
+#### Connection
+
+```bash
+$ vpn
+$ vpn -m  # Manual mode
+$ vpn -mv # Manual mode and Verbose Mode
+```
+
+![vpn auto-connection](https://user-images.githubusercontent.com/5036939/29922226-aae38940-8e8f-11e7-8de7-1b3cbdb787d0.png)
+
+#### Disconnection
+
+```bash
+$ vpn -d
+```
+
+![vpn disconnection](https://user-images.githubusercontent.com/5036939/29922354-368226d2-8e90-11e7-97f1-a83c23bbfd6a.png)
+
+### VPN status
+
+```bash
+$ vpn -s
+```
+
+![conntection status](https://user-images.githubusercontent.com/5036939/29922328-2375cc56-8e90-11e7-955d-393b4ce2cfab.png)
+
+![disconntection status](https://user-images.githubusercontent.com/5036939/29922481-c4d8c94a-8e90-11e7-93a5-62deb6053759.png)
+
+### VPN version
+
+```bash
+$ vpn -V
+```
 
 ## Troubleshooting
 
