@@ -48,26 +48,37 @@ $ pass insert email/gmail # Add password of mail for OTP
 
 ## Usage
 
+<details>
+<summary>Recommand. <code>alias</code> vpn</summary>
+
+Add alias to your shell config(bashrc, zshrc, ...) 
+
 ```bash
-./vpn.sh -h
+alias vpn="~/your-vpn-path/vpn"
 ```
 
-<details>
-<summary>Recommand. <code>alias</code> setting</summary>
-
-1. Add alias to your shell config(bashrc, zshrc, ...) 
-
-    ```bash
-    alias vpn="~/your-vpn-path/vpn.sh"
-    ```
-
-2. easy run
-
-    ```bash
-    $ vpn
-    ```
-
 </details>
+
+
+### VPN Help
+
+```bash
+$ vpn -h
+vpn.sh v1.0.0 -- Automate vpn connections using 'openconnect'
+
+Usage:
+  vpn.sh [hVsmvd]
+
+Options:
+  -h  Display this help message
+  -V  Display the version number and exit
+  -s  Display connection status and exit
+  -m  Run manual mode
+  -v  Verbose mode. Causes vpn to print debugging messages about its progress.
+      This is helpful in debugging connection.
+  -d  Disconnect VPN
+```
+
 
 ### VPN Connection/Disconnection
 
@@ -75,34 +86,76 @@ $ pass insert email/gmail # Add password of mail for OTP
 
 ```bash
 $ vpn
-$ vpn -m  # Manual mode
-$ vpn -mv # Manual mode and Verbose Mode
+ 🔐  Hello VPN!
+  → User: yeongjun.kim
+  → Url : https://test-server-url.com
+ >> Connecting...
+ ✔︎  VPN connection has succeeded. (pid: 31379)
+
+# Manual mode
+$ vpn -m
+# Manual mode and Verbose Mode
+$ vpn -mv
 ```
 
+<details>
+<summary>screenshot</summary>
+
 ![vpn auto-connection](https://user-images.githubusercontent.com/5036939/29922226-aae38940-8e8f-11e7-8de7-1b3cbdb787d0.png)
+
+</details>
 
 #### Disconnection
 
 ```bash
 $ vpn -d
+Password:
+ 🔐  Hello VPN!
+ >> Disconnecting...
+ >> Done.
 ```
 
+<details>
+<summary>screenshot</summary>
+
 ![vpn disconnection](https://user-images.githubusercontent.com/5036939/29922354-368226d2-8e90-11e7-97f1-a83c23bbfd6a.png)
+
+</details>
 
 ### VPN status
 
 ```bash
+# if connected VPN
 $ vpn -s
+ ✔︎  VPN is connected (pid: 99901)
+ --------------------------------------
+ >> openconnect
+      --background
+      --juniper
+      --user=yeongjun.kim
+      --useragent=ua
+      https://test-server-url.com
+      
+# if disconnected VPN
+$ vpn -s
+ ✘  VPN is connected
 ```
+
+<details>
+<summary>screenshot</summary>
 
 ![conntection status](https://user-images.githubusercontent.com/5036939/29922328-2375cc56-8e90-11e7-955d-393b4ce2cfab.png)
 
 ![disconntection status](https://user-images.githubusercontent.com/5036939/29922481-c4d8c94a-8e90-11e7-93a5-62deb6053759.png)
 
+</details>
+
+
 ### VPN version
 
 ```bash
 $ vpn -V
+ >> vpn.sh version v1.0.0
 ```
 
 ## Troubleshooting
