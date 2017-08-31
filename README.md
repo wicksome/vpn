@@ -80,9 +80,7 @@ Options:
 ```
 
 
-### VPN Connection/Disconnection
-
-#### Connection
+### VPN Connection
 
 ```bash
 $ vpn
@@ -105,7 +103,7 @@ $ vpn -mv
 
 </details>
 
-#### Disconnection
+#### VPN Disconnection
 
 ```bash
 $ vpn -d
