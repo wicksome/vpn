@@ -2,7 +2,7 @@
 
 if-executable() {
     local BIN=$(command -v "$1" 2>/dev/null)
-    if [[ ! $BIN == "" && -x $BIN ]]; then true; else false; fi
+    if [[ ! $BIN == "" && -x $BIN ]]; then return 0; else return 1; fi
 }
 
 if if-executable brew;then
