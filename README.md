@@ -4,6 +4,7 @@
 
 ## Dependency or Recommand modules
 
+- Python 2.x
 - [openconnect](http://www.infradead.org/openconnect/): vpn client
 - gpg
 - [pass](https://www.passwordstore.org/): the standard unix password manager
