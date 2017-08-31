@@ -28,7 +28,7 @@
     ```
 
 <details>
-<summary>Tip. Using <code>pass</code></summary>
+<summary>Recommand. Using <code>pass</code></summary>
 
 Recommand you that use `pass` module for manage passwords.
 
@@ -53,7 +53,7 @@ $ pass insert email/gmail # Add password of mail for OTP
 ```
 
 <details>
-<summary>Tip. <code>alias</code> setting</summary>
+<summary>Recommand. <code>alias</code> setting</summary>
 
 1. Add alias to your shell config(bashrc, zshrc, ...) 
 
