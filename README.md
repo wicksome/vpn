@@ -1,12 +1,13 @@
-# VPN
+# Auto VPN
 
-> automation connect vpn
+> Automate VPN connection.
 
-## Dependency or Recommand modules
+![preview-help](https://user-images.githubusercontent.com/5036939/29922362-3ff7ae80-8e90-11e7-9e3b-1ed4004b39fa.png)
 
+## Dependency
+
+- Python 2.x
 - [openconnect](http://www.infradead.org/openconnect/): vpn client
-- gpg
-- [pass](https://www.passwordstore.org/): the standard unix password manager
  
 ## Install
 
@@ -27,15 +28,20 @@
     ```
 
 <details>
-<summary>Tip. Using <code>pass</code></summary>
+<summary>Recommand. Using <code>pass</code></summary>
+
+Recommand you that use `pass` module for manage passwords.
+
+- gpg
+- [pass](https://www.passwordstore.org/): the standard unix password manager
 
 ```bash
+$ brew install gpg
+$ brew install pass
 $ gpg --gen-key
 $ pass init "password stroe"
-# Add password for vpn
-$ pass insert vpn/login-password
-# Add password of mail for OTP
-$ pass insert email/gmail
+$ pass insert vpn/login-password # Add password for vpn
+$ pass insert email/gmail # Add password of mail for OTP
 ```
 
 </details>
@@ -47,7 +53,7 @@ $ pass insert email/gmail
 ```
 
 <details>
-<summary>Tip. <code>alias</code> setting</summary>
+<summary>Recommand. <code>alias</code> setting</summary>
 
 1. Add alias to your shell config(bashrc, zshrc, ...) 
 
@@ -62,6 +68,42 @@ $ pass insert email/gmail
     ```
 
 </details>
+
+### VPN Connection/Disconnection
+
+#### Connection
+
+```bash
+$ vpn
+$ vpn -m  # Manual mode
+$ vpn -mv # Manual mode and Verbose Mode
+```
+
+![vpn auto-connection](https://user-images.githubusercontent.com/5036939/29922226-aae38940-8e8f-11e7-8de7-1b3cbdb787d0.png)
+
+#### Disconnection
+
+```bash
+$ vpn -d
+```
+
+![vpn disconnection](https://user-images.githubusercontent.com/5036939/29922354-368226d2-8e90-11e7-97f1-a83c23bbfd6a.png)
+
+### VPN status
+
+```bash
+$ vpn -s
+```
+
+![conntection status](https://user-images.githubusercontent.com/5036939/29922328-2375cc56-8e90-11e7-955d-393b4ce2cfab.png)
+
+![disconntection status](https://user-images.githubusercontent.com/5036939/29922481-c4d8c94a-8e90-11e7-93a5-62deb6053759.png)
+
+### VPN version
+
+```bash
+$ vpn -V
+```
 
 ## Troubleshooting
 
