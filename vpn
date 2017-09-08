@@ -187,14 +187,14 @@ function connect() {
   if [ ${VPN_MODE_MANUAL:-0} -eq 1 ]; then
     echo_info "If user/url isn't entered, set default values."
     echo_data "User: $(tput setaf 7)$USER$(tput sgr0)"
-    echo_data "Url : $(tput setaf 7)$SERVER$(tput sgr0)"
+    echo_data "URL : $(tput setaf 7)$SERVER$(tput sgr0)"
     echo_info "Please enter $(tput smul)user$(tput rmul)."
     read -rp "$DATA_PREFIX " user
     echo_info "Please enter $(tput smul)url$(tput rmul)."
     read -rp "$DATA_PREFIX " url
   else
     echo_data "User: $(tput setaf 7)$USER$(tput sgr0)"
-    echo_data "Url : $(tput setaf 7)$SERVER$(tput sgr0)"
+    echo_data "URL : $(tput setaf 7)$SERVER$(tput sgr0)"
   fi
 
   # set redirect
