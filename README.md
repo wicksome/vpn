@@ -30,7 +30,7 @@
 <details>
 <summary>Recommand. Using <code>pass</code></summary>
 
-Recommand you that use `pass` module for manage passwords.
+> I recommand you that use `pass` module for manage passwords.
 
 - gpg
 - [pass](https://www.passwordstore.org/): the standard unix password manager
