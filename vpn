@@ -130,7 +130,7 @@ function is_yn() {
 # get vpn status detail.
 # @return connection is 0, disconnection is 1
 function status() {
-  echo_with_status "VPN is connected" "VPN is connected"
+  echo_with_status "VPN is connected" "VPN is not connected"
   local vpn_status="$?"
   if [ $vpn_status -eq 0 ]; then
     local IFS
