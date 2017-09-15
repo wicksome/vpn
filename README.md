@@ -30,10 +30,14 @@
 <details>
 <summary>Recommand. Using <code>pass</code></summary>
 
-Recommand you that use `pass` module for manage passwords.
+> I recommand you that use `pass` module for manage passwords.
 
 - gpg
 - [pass](https://www.passwordstore.org/): the standard unix password manager
+
+**install & setting**
+
+Installation and initialization
 
 ```bash
 $ brew install gpg
@@ -41,7 +45,14 @@ $ brew install pass
 $ gpg --gen-key
 $ pass init "password stroe"
 $ pass insert vpn/login-password # Add password for vpn
-$ pass insert email/gmail # Add password of mail for OTP
+$ pass insert email/gmail        # Add password of mail for OTP
+```
+
+Then, modify part that set the password in `.vpnrc`
+
+```sh
+VPN_CMD_PASSWORD="pass vpn/login-password"
+VPN_CMD_MAIL_PASSWORD="pass email/gmail"
 ```
 
 </details>
