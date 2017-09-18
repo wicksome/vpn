@@ -1,4 +1,4 @@
-### Error: The \`brew link\` step ...
+# The \`brew link\` step ...
 
 **Error message**
 
@@ -15,3 +15,17 @@ Could not symlink share/man/man8/openconnect.8
 sudo chown -R $(whoami) /usr/local/share/man/man8
 brew link openconnect
 ```
+
+# Unexpected 400 result from server...
+
+**Error message**
+
+```
+Got HTTP response: HTTP/1.1 400 Bad Request
+Unexpected 400 result from server
+Creating SSL connection failed
+```
+
+**Solution**
+
+https://bugs.archlinux.org/task/50869
