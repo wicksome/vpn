@@ -7,7 +7,7 @@
 ## Dependency
 
 - Python 2.x
-- [openconnect](http://www.infradead.org/openconnect/): vpn client
+- [openconnect](http://www.infradead.org/openconnect/) v7.0.8: vpn client
  
 ## Install
 
