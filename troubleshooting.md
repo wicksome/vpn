@@ -16,7 +16,7 @@ sudo chown -R $(whoami) /usr/local/share/man/man8
 brew link openconnect
 ```
 
-# Unexpected 400 result from server...
+# ***Unexpected 400 result from server...***
 
 **Error message**
 
