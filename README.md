@@ -76,19 +76,6 @@ alias vpn="~/your-vpn-path/vpn"
 
 ```bash
 $ vpn -h
-vpn.sh v1.0.0 -- Automate vpn connections using 'openconnect'
-
-Usage:
-  vpn.sh [hVsmvd]
-
-Options:
-  -h  Display this help message
-  -V  Display the version number and exit
-  -s  Display connection status and exit
-  -m  Run manual mode
-  -v  Verbose mode. Causes vpn to print debugging messages about its progress.
-      This is helpful in debugging connection.
-  -d  Disconnect VPN
 ```
 
 
@@ -110,13 +97,6 @@ $ vpn -m
 $ vpn -mv
 ```
 
-<details>
-<summary>screenshot</summary>
-
-![vpn auto-connection](https://user-images.githubusercontent.com/5036939/29922226-aae38940-8e8f-11e7-8de7-1b3cbdb787d0.png)
-
-</details>
-
 ### VPN Disconnection
 
 ```bash
@@ -126,13 +106,6 @@ Password:
  >> Disconnecting...
  >> Done.
 ```
-
-<details>
-<summary>screenshot</summary>
-
-![vpn disconnection](https://user-images.githubusercontent.com/5036939/29922354-368226d2-8e90-11e7-97f1-a83c23bbfd6a.png)
-
-</details>
 
 ### VPN status
 
@@ -152,16 +125,6 @@ $ vpn -s
 $ vpn -s
  ✘  VPN is connected
 ```
-
-<details>
-<summary>screenshot</summary>
-
-![conntection status](https://user-images.githubusercontent.com/5036939/29922328-2375cc56-8e90-11e7-955d-393b4ce2cfab.png)
-
-![disconntection status](https://user-images.githubusercontent.com/5036939/29922481-c4d8c94a-8e90-11e7-93a5-62deb6053759.png)
-
-</details>
-
 
 ### VPN version
 
