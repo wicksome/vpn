@@ -1,4 +1,4 @@
-# Auto VPN
+# VPN.sh
 
 > Automate VPN connection.
 
