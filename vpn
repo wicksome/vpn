@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly VERSION="1.0.0"
+readonly VERSION="1.0.1"
 readonly BASE_DIR=$(dirname "$0")
 readonly ABSOLUTE_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
 
