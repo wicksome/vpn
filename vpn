@@ -41,12 +41,25 @@ VPN_OPTION_VERBOSE=""
 
 # Help
 function help() {
-  local vpn="$(tput setaf 2)vpn.sh$(tput sgr0)"
+  local vpn="$(tput setaf 2)vpn$(tput sgr0)"
   cat <<HELP_VPN
-$vpn v${VERSION} -- Automate vpn connections using 'openconnect'
+  
+$(tput bold)$(tput setaf 2) /\$\$   /\$\$ /\$\$\$\$\$\$\$  /\$\$   /\$\$       /\$\$\$\$\$\$  /\$\$   /\$\$
+| \$\$  | \$\$| \$\$__  \$\$| \$\$  | \$\$      /\$\$__  \$\$| \$\$  | \$\$
+| \$\$  | \$\$| \$\$  | \$\$| \$\$\$\$| \$\$     | \$\$  |__/| \$\$  | \$\$
+| \$\$  | \$\$| \$\$  | \$\$| \$\$ \$\$ \$\$      \\ \$\$\$\$\$\$ | \$\$\$\$\$\$\$\$
+| \$\$  | \$\$| \$\$\$\$\$\$\$ | \$\$\\ \$\$\$\$       \\___  \$\$| \$\$__  \$\$
+ \\ \$\$/ \$\$ | \$\$      | \$\$ \\  \$\$ /\$\$\$ /\$\$  | \$\$| \$\$  | \$\$
+  \\ \$\$\$\$  | \$\$      | \$\$  | \$\$| \$\$\$ \\ \$\$\$\$\$\$/| \$\$  | \$\$
+   \\_\$\$   |__/      |__/  |__/|___/  \\_____/ |__/  |__/$(tput sgr0)
+
+Automate vpn connections using 'openconnect'
 
 Usage:
-  $vpn [hVsmvd]
+  \$ $vpn [options]
+
+Version:
+  ${VERSION}
 
 Options:
   -h  Display this help message
