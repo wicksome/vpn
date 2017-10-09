@@ -2,7 +2,7 @@
 
 > Automate VPN connection.
 
-![preview-help](https://user-images.githubusercontent.com/5036939/29922362-3ff7ae80-8e90-11e7-9e3b-1ed4004b39fa.png)
+![preview-help](https://user-images.githubusercontent.com/5036939/31331536-a8fa2ea2-ad1d-11e7-88b0-5a88f8eabca2.png)
 
 ## Dependency
 
@@ -92,6 +92,8 @@ Options:
 
 
 ### VPN Connection
+
+![demo](https://user-images.githubusercontent.com/5036939/31331491-75aae5d2-ad1d-11e7-9b28-17f3c1c44d95.gif)
 
 ```bash
 $ vpn
