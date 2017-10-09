@@ -1,6 +1,7 @@
+# VPN.sh</b></h1>
+> Automate VPN connection.
+
 <p align="center">
- <h1><b>VPN.sh</b></h1>
- <p>Automate VPN connection.</p>
  <img src ="https://user-images.githubusercontent.com/5036939/31331536-a8fa2ea2-ad1d-11e7-88b0-5a88f8eabca2.png" />
 </p>
 
