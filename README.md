@@ -72,14 +72,14 @@ alias vpn="~/your-vpn-path/vpn"
 </details>
 
 
-### VPN Help
+### VPN Help: `-h`
 
 ```bash
 $ vpn -h
 ```
 
 
-### VPN Connection
+### VPN Connection: `[default]`, `-m`, `-v`
 
 ![demo](https://user-images.githubusercontent.com/5036939/31331491-75aae5d2-ad1d-11e7-9b28-17f3c1c44d95.gif)
 
@@ -93,11 +93,12 @@ $ vpn
 
 # Manual mode
 $ vpn -m
+
 # Manual mode and Verbose Mode
 $ vpn -mv
 ```
 
-### VPN Disconnection
+### VPN Disconnection: `-d`
 
 ```bash
 $ vpn -d
@@ -107,7 +108,7 @@ Password:
  >> Done.
 ```
 
-### VPN status
+### VPN status: `-s`
 
 ```bash
 # if connected VPN
@@ -126,7 +127,7 @@ $ vpn -s
  ✘  VPN is connected
 ```
 
-### VPN version
+### VPN version: `-V`
 
 ```bash
 $ vpn -V
